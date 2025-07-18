@@ -1,6 +1,6 @@
 # PingPong
 
-PingPong is a minimal React frontend that connects to a backend WebSocket server. It allows users to send messages and receive real-time responses, serving as a basic template for WebSocket-based applications.
+PingPong is a minimal React frontend that connects to a backend WebSocket server. It allows users to send messages and receive real-time responses, serving as a basic template for WebSocket-based apps.
 
 ## Features
 
