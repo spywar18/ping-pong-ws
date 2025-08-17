@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-
 function App() {
   const [socket, setSocket] = useState <WebSocket | null>(null);
-
   function sendMessage() {
     if (!socket) {
       return;
@@ -11,19 +9,16 @@ function App() {
   //@ts-ignore
   socket.send("ping")
 }
-
   useEffect(() => {
     const ws = new WebSocket('ws://localhost:8000/ws');
     setSocket(ws);
     
     // ws.onopen = () => {
     //   console.log('WebSocket connection established');
-    // };
-    
+    // }; 
     ws.onmessage = (event) => {
       alert( event.data);
     };
-    
     // ws.onclose = () => {
     //   console.log('WebSocket connection closed');
     // };
